@@ -13,6 +13,18 @@
   padding: 20px;
 }
 
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 80%;
+}
+
 .toggle-button {
   align-self: center;
   height: 50px;
@@ -291,6 +303,9 @@
     background-color: #1c1c1d;
     color: white;
   }
+  .main-heading {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -328,5 +343,8 @@
   }
   ::placeholder {
     font-size: 12px;
+  }
+  .main-heading {
+    font-size: 22px;
   }
 }

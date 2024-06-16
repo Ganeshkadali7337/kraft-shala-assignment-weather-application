@@ -187,24 +187,27 @@ class Home extends Component {
     return (
       <div className={lightMode ? `bg-container light` : `bg-container dark`}>
         <div className="content">
-          {lightMode ? (
-            <button className="toggle-button" onClick={this.onClickLightMode}>
-              <div className="mode-icon-container">
-                <MdLightMode className="mode-icon" />
-              </div>
-              Light Mode
-            </button>
-          ) : (
-            <button
-              className="toggle-button dark-toggle-btn"
-              onClick={this.onClickDarkMode}
-            >
-              Dark Mode
-              <div className="mode-icon-container">
-                <MdDarkMode className="mode-icon" />
-              </div>
-            </button>
-          )}
+          <div className="toggle-container">
+            <h1 className="main-heading">Weather App</h1>
+            {lightMode ? (
+              <button className="toggle-button" onClick={this.onClickLightMode}>
+                <div className="mode-icon-container">
+                  <MdLightMode className="mode-icon" />
+                </div>
+                Light Mode
+              </button>
+            ) : (
+              <button
+                className="toggle-button dark-toggle-btn"
+                onClick={this.onClickDarkMode}
+              >
+                Dark Mode
+                <div className="mode-icon-container">
+                  <MdDarkMode className="mode-icon" />
+                </div>
+              </button>
+            )}
+          </div>
           {this.renderInputSection()}
           <div className="weather-data-container">
             {isLoading && (
