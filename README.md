@@ -45,6 +45,12 @@ The application uses JavaScript's Date object to format date and time in the fol
 - **Sunrise and Sunset Times**: Displayed only time using `toLocaleTimeString` method.
 - **Date and Time of Weather**: Displayed the full date and time using `toLocaleString` method.
 
+## Project Structure
+
+The main file for the application is located in the `src` directory:
+
+- **src/Home**: Contains the main React component for the weather application.
+
 ## Available Scripts
 
 In the project directory, you can run:
